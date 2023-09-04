@@ -29,7 +29,7 @@ DEFAULT rhel8-over-nfsv3
 LABEL rhel8-over-nfsv3
   MENU label Launch Diskless client
   KERNEL vmlinuz
-  APPEND initrd=initramfs root=nfs:192.168.100.102:/shared:vers=3,rw rw panic=60 ipv6.disable=1 console=tty0 console=ttyS0,115200n8
+  APPEND initrd=initramfs root=nfs:server.example.com:/shared:vers=3,rw rw panic=60 ipv6.disable=1 console=tty0 console=ttyS0,115200n8
 
 <% else -%>
 TIMEOUT 200
